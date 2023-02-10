@@ -85,7 +85,7 @@ body {
 .btn--text {
   display: inline-block;
   background: none;
-  font-size: 1.7rem;
+  font-size: 1.7em;
   font-family: inherit;
   font-weight: 500;
   color: var(--color-primary);
@@ -118,6 +118,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
   height: 9rem;
   width: 100%;
   padding: 0 6rem;
@@ -675,4 +676,48 @@ h4 {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    height: 10rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 100;
+  }
+
+  /* nav and stickly class at the same time */
+  .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .nav__logo {
+    height: 3.5rem;
+    transition: all 0.3s;
+  }
+
+  .nav__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav__item {
+    margin-left: 4rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    padding: 1rem 0.75rem;
+    border-radius: 3rem;
+    background-color: var(--color-primary);
+    color: #222;
+    text-align: center;
+  }
 }
