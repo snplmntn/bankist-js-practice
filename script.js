@@ -56,6 +56,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   // Matching strategy
   if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
+    console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
@@ -290,9 +291,9 @@ slider();
 // const h1 = document.querySelector('h1');
 // console.log(h1.querySelectorAll('.highlight'));
 
-document.addEventListener('DOMContentLoaded', function (e) {
-  console.log('HTMl parsed');
-});
+// document.addEventListener('DOMContentLoaded', function (e) {
+//   console.log('HTMl parsed');
+// });
 
 // window.addEventListener('beforeunload', function (e) {
 //   e.preventDefault();
