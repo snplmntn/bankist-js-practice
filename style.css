@@ -677,14 +677,10 @@ html {
 }
 
 @media (max-width: 740px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    flex-direction: row;
-    /* justify-content: ; */
+  .header__title {
+    flex-direction: column;
   }
-  
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -693,7 +689,7 @@ html {
     height: 10rem;
     width: 100%;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
     z-index: 100;
   }
 
